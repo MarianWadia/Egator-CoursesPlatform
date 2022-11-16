@@ -3,3 +3,10 @@ window.addEventListener('scroll', () => {
         'window-scroll', window.scrollY > 0
     );
 })
+
+const faqs = document.querySelectorAll('.faq');
+faqs.forEach(faq => {
+    faq.addEventListener('click', ()=>{
+        faq.classList.toggle('open');
+    })
+});
