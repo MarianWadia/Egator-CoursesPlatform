@@ -455,6 +455,7 @@ footer ul li:hover{
         height: fit-content;
         width: 18rem;
         flex-direction: column;
+        display: none;
         gap: 0;
     }
     .nav-menu li{
@@ -538,3 +539,66 @@ footer ul li:hover{
     }
 }
 
+/********************** MEDIA QUERIES FOR TABLETS **********************/
+
+@media screen and (max-width: 600px){
+    /* body{
+        width: fit-content;
+    } */
+    .container{
+        width: var(--container-width-sm)
+    }
+    /******************** THE NAVBAR *******************************/
+    .nav-menu{
+        right: 3%;
+    }
+
+    /******************** THE HEADER *******************************/
+    header{
+        height: 100vh;
+    }
+    .header__container{
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        text-align: center;
+    }
+    .left__header .btn{
+        align-self: center;
+    }
+    .left__header p{
+        margin-bottom: 1.3rem;
+    }
+
+    /******************** THE CATEGORIES *******************************/
+    .categories__left{
+       text-align: center;
+    }
+    .categories__right{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .category{
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .category__icon{
+        margin-top: 4px;
+        display: inline-block;
+    }
+    /******************** THE POPULAR COURSES *******************************/
+    .courses__container{
+        grid-template-columns: 1fr;
+    }
+    /******************** THE FOOTER *******************************/
+    .container__footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    .footer-1 p{
+        margin: 1rem auto;
+    }
+    .footer-4 .social{
+       justify-content: center;
+    }
+}
