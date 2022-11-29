@@ -5,7 +5,7 @@
 * [Usage](#usage)
 * [Installation](#installation)
 * [Project Dependencies](#project-dependencies)
-
+* [Footer](#footer)
 ![Demo-preview](https://cdn.dribbble.com/users/1019864/screenshots/3079099/codeloop.gif)
 
 ## Project Descreption
@@ -22,5 +22,6 @@ you can install this project either by:
 ## Project Dependencies
 There are some technologies used in developing that project as the library for icons called `unicons`, the google fonts used and the `swiper js` library used for making the testimonials section.
 
-
+## Footer
+If you find this repo useful, don't hesitate to leave us a star. And contribute with us for anything.
 ![Footerimage](https://raw.githubusercontent.com/navendu-pottekkat/awesome-readme/master/fooooooter.png)
