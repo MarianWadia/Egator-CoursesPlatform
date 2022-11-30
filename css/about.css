@@ -4,7 +4,7 @@
     margin-top: 3rem;
 }
 
-.about__achievements .about__achievements-container{
+.about__achievements-container{
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 5rem;
@@ -14,7 +14,7 @@
     margin: 1.6rem 0 2.5rem;
 }
 
-.left-about-achievements .achievement-cards{
+.achievement-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -66,7 +66,7 @@
 
 .team-member{
     background-color: var(--color-bg2);
-    padding: 2rem;
+    padding: 0.5rem;
     border: 1px solid transparent;
     transition: var(--transition-all);
     position: relative;
@@ -117,3 +117,38 @@
 
 /****************************** END MEET OUR TEAM SECTION ******************************/
 
+/****************************** MEDIA QUERIES FOR ABOUT PAGE (TABLETS SCREENS) ******************************/
+ @media screen and (max-width: 1024px){
+    .about__achievements{
+        margin-top: 3rem;
+    }
+
+    .about__achievements-container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .team__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+    }
+    .team-member{
+        padding: 2rem;
+    }
+ }
+/****************************** END OF MEDIA FOR TABLETS ******************************/
+/****************************** MEDIA QUERIES FOR ABOUT PAGE (MOBILE SCREENS) ******************************/
+ @media screen and (max-width: 600px) {
+    .achievement-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .achievement-card:nth-child(3){
+        align-self: center;
+    }
+    .team__container{
+        gap: 0.7rem
+    }
+    .team-member{
+        padding: 0.3rem;
+    }
+ }
